@@ -1,6 +1,9 @@
 /*
 	Date : 2020-10-06
 */
+package main
+
+import "fmt"
 
 func solution(answers []int) []int {
     solve := make([]int, 0, 3)
@@ -35,4 +38,9 @@ func solution(answers []int) []int {
     }
     
     return solve
+}
+
+func main() {
+    sample := []int{1,2,3,4,5} // answer : [1]
+	fmt.Println(solution(sample))
 }
